@@ -6,6 +6,9 @@ using UnityEngine.UIElements;
 
 public class GuardAI : MonoBehaviour
 {
+    public bool _coinTossed;
+    public Vector3 _coinPos;
+
     private NavMeshAgent _agent;
     private Animator _anim;
     [SerializeField] private List<Transform> _wayPoints = new List<Transform>();
@@ -19,7 +22,6 @@ public class GuardAI : MonoBehaviour
     void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
-
         _anim = GetComponent<Animator>();
     }
 
@@ -31,7 +33,7 @@ public class GuardAI : MonoBehaviour
 
     private void GuardsMovement()
     {
-        if (_wayPoints.Count > 0 && _wayPoints[_currentTarget] != null)
+        if (_wayPoints.Count > 0 && _wayPoints[_currentTarget] != null && _coinTossed == false)
         {
 
             _agent.SetDestination(_wayPoints[_currentTarget].position);
@@ -78,6 +80,16 @@ public class GuardAI : MonoBehaviour
 
                 }
             }
+        }
+        else
+        {
+            float distance = Vector3.Distance(transform.position, _coinPos);
+
+            if (distance < 4.0f)
+            {
+                _anim.SetBool("Walk", false);
+            }
+            WaitBeforeMoving();
         }
     }
 
