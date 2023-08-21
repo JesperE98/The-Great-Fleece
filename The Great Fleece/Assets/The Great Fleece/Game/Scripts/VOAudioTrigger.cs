@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class VOAudioTrigger : MonoBehaviour
 {
-    [SerializeField] private AudioClip _audio;
+    [SerializeField] private AudioClip clipToPlay;
     [SerializeField] private GameObject _voiceOverTrigger;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
-        {           
-            AudioSource.PlayClipAtPoint(_audio, Camera.main.transform.position, 0.1f);
+        {
+            AudioManager.Instance.PlayVoiceOver(clipToPlay);
             _voiceOverTrigger.SetActive(false);
         }     
     }
