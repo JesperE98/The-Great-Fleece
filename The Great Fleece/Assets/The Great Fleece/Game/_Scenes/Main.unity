@@ -2800,7 +2800,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 138794251}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1146841444}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: QuitToMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &138794251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11668,7 +11680,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354861134}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.06696149, y: 0.28154823, z: 0.019699886, w: 0.9570051}
+  m_LocalRotation: {x: -0.06696149, y: 0.28154823, z: 0.019699888, w: 0.9570051}
   m_LocalPosition: {x: -7.7790427, y: 1.85002, z: -40.09273}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -14456,7 +14468,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486274142}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.041168, y: -0.85812944, z: -0.069677375, w: 0.50701493}
+  m_LocalRotation: {x: -0.041168004, y: -0.8581294, z: -0.06967735, w: 0.5070151}
   m_LocalPosition: {x: 6.7, y: 9.42, z: 14.410004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -19219,8 +19231,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734152674}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.03717623, y: -0.86692446, z: 0.06540919, w: 0.49272874}
-  m_LocalPosition: {x: 17.928545, y: 13.35, z: 25.00676}
+  m_LocalRotation: {x: 0.038633093, y: -0.8556583, z: 0.06455843, w: 0.51204354}
+  m_LocalPosition: {x: 19.05585, y: 13.35, z: 23.781158}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26427,7 +26439,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050370973}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.4034591, y: -0.51193255, z: 0.2957675, w: 0.6983319}
+  m_LocalRotation: {x: 0.40349755, y: -0.5118414, z: 0.29571468, w: 0.6983989}
   m_LocalPosition: {x: 9.54, y: 20.44, z: -30.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -28611,6 +28623,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1128905619}
   m_Mesh: {fileID: 4300380, guid: 9a20b9dd34e6b4140a8c92991d94c731, type: 3}
+--- !u!1 &1146841443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1146841445}
+  - component: {fileID: 1146841444}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1146841444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146841443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47517541ac9121943af8bd928d2077e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1146841445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146841443}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -37.058826, y: -6.0547667, z: 36.062897}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1151365369
 GameObject:
   m_ObjectHideFlags: 3
@@ -30963,7 +31019,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1278358341}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1146841444}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: QuitToMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1278358341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32093,7 +32161,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 28ed586bf635542a8a33c881514657f1, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.01
   m_Pitch: 1
   Loop: 0
@@ -38981,7 +39049,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1735177367}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1146841444}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: RestartTheGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1735177367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40099,10 +40179,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1437867510}
   - {fileID: 1608552491}
   - {fileID: 902789740}
   - {fileID: 1499451632}
-  - {fileID: 1437867510}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1785473894
@@ -50235,8 +50315,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043896029}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.38400468, y: -0.5986138, z: -0.39553168, w: 0.5811684}
-  m_LocalPosition: {x: -0.31645453, y: -5.969873, z: 160.64944}
+  m_LocalRotation: {x: -0.38292414, y: -0.5447734, z: -0.30674148, w: 0.68007404}
+  m_LocalPosition: {x: 2.5945663, y: -5.909514, z: 158.07903}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -51775,7 +51855,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2109482349}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1146841444}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: RestartTheGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2109482349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52402,7 +52494,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 56d3398e831384fedb0c6e8c246f05a5, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
@@ -128265,6 +128357,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1287041945}
   - {fileID: 1312847918}
+  - {fileID: 1146841445}
   - {fileID: 1724237662}
   - {fileID: 2077282166}
   - {fileID: 66579015}
